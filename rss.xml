@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Exit with style</title>
+    <link>https://frp-2718.github.io/</link>
+    <description>A perso-professional blog about library stuff</description>
+
+    <item>
+      <title>Concours de bibliothécaire interne 2012</title>
+      <link>https://frp-2718.github.io/articles/concours-2012.html</link>
+      <guid>frp-2718.github.io/</guid>
+      <pubDate>Thu, 2 Feb 2012 18:30:00 GMT</pubDate>
+      <description>Concours de bibliothécaire interne 2012</description>
+    </item>
+  </channel>
+</rss>
