@@ -4,6 +4,13 @@
     <title>Exit with style</title>
     <link>https://frp-2718.github.io/</link>
     <description>A perso-professional blog about library stuff</description>
+    <image>
+      <url>https://frp-2718.github.io/assets/cactus_favicon.png</url>
+      <title>Exit with style</title>
+      <link>https://frp-2718.github.io/</link>
+      <width>32</width>
+      <height>32</height>
+    </image>
 
     <item>
       <title>Concours de bibliothécaire interne 2012</title>
