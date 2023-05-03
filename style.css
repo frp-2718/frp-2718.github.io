@@ -6,7 +6,7 @@ body {
   flex-direction: column;
   margin: auto;
   max-width: 690px;
-  font: 18px/1.4 Georgia, Garamond, Times, serif;
+  font: 18px/1.4 Garamond, Georgia, Times, serif;
   font-size: 18px;
   color: #333;
   background-color: #fffffd;
