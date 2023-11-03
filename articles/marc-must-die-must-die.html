@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>'Marc must die' must die</title>
+    <meta charset="utf-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Personal blog">
+    <meta name="author" content="frp-2718" />
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS feed" href="/feed/feed.xml">
+    <link rel="icon" type="image/x-icon" href="../assets/cactus_favicon.png">
+  </head>
+
+  <body>
+    <header> 
+      <nav>
+        <a href="../index.html">Index</a>
+        <a href="../about.html">About</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../things.html">Things I forget</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <h1><i>Marc must die</i> must die</h1>
+      <div class="auth-date">
+        Par frp, le <time datetime="2023-01-16">16 janvier 2023</time>
+      </div>
+
+      <p>When ‘MARC Must Die’ <a id="footnote-1-ref" href="#footnote-1"><abbr title="Footnote 1">[1]</abbr></a> was published, Céline Dion was still a successful singer and those of us alive at the time wore really stylish clothes and hairstyles. Some even grew fancy mustaches.</p>
+
+      <p>Roy Tennant was still an enthusiastic librarian, dazzled by XML, then freshly born from the W3C and full of promises. For XML to increase in the library world, something should decrease. The victim was soon designated and the sentence was definite : MARC should be shattered. But MARC managed to survive. Fifteen years later, in 2017, Roy Tennant complained again in a blog post <a id="footnote-2-ref" href="#footnote-2"><abbr title="Footnote 2">[2]</abbr></a> of MARC’s too lengthy agony — this time switching his interest towards Linked Data giving in to the hype of the moment. And he was not alone to set upon our poor MARC <a id="footnote-3-ref" href="#footnote-3"><abbr title="Footnote 3">[3]</abbr></a>. But, again, MARC survived. And it still lives. More than that, it flourished, in many flavors, for many functions, to the greatest joy of generations of catalogers.</p>
+
+      <p>So, what are the unforgivable sins MARC would be guilty of ? Should XML, or Linked Data, become a replacement ? What does that even mean ? It has been years since Roy Tennant’s famous article was published, and much has been written for and against its conclusion, but I would like to examine again its arguments, in order to clarify some underlying concepts, given the recent developments in bibliographic description modeling. But, first things first, let’s see briefly what is MARC and which ideas guided its design.</p>
+
+      <h2>Machine-Readable Cataloging</h2>
+
+      <p>“Any discussion about MARC in particular involves discussing library automation in general.” That is how Henriette Avram, who headed the creation of MARC format in the sixties, ends her retrospective of the MARC program <a id="footnote-4-ref" href="#footnote-4"><abbr title="Footnote 4">[4]</abbr></a> developed by the Library of Congress. From the beginning, MARC was designed with the idea of cataloging, indexing, sorting or searching automation in mind, in the context of an emerging world of computer processes.</p>
+
+      <p>Quite soon however appeared the idea of bibliographic data exchange, with the ambition to reduce the duplication of efforts and, consequently, the cost of production of bibliographic data. Then MARC II became international and stabilized in 1968, with the opening of a service, in the Library of Congress, dedicated to bibliographic records exchange. Standardized by the well known ISO 2709 standard, the format became the backbone of bibliographic data production and dissemination all over the world.</p>
+
+      <p>Any data encoding format should be able to express existing metadata. So MARC was of course heavily influenced by existing cataloging codes — AACR were published in 1967 — and in return influenced cataloging standards, in a turmoil of ideas, trials and fulfillments quite comparable to what is happening today with IFLA LRM, BIBFRAME, semantic web and all the bibliographic modeling activities accomplished by bibliographic agencies and national libraries.</p>
+
+      <p>What to retain from all that ? While it is true that MARC and AACR are closely related, they are no “so intertwined that teasing out which must be jettisoned and which can be kept will be at least as difficult as starting from scratch.” <a id="footnote-5-ref" href="#footnote-5"><abbr title="Footnote 5">[5]</abbr></a> MARC is a computer <strong>format</strong> — that is a syntax — which makes the structure of bibliographic data explicit by adding tags organized in a hierarchical way, designed to encode data elements defined by some <strong>cataloging rules</strong> referring themselves to a, here implicit, <strong>model</strong>.</p>
+
+      <p>Although it is clear that every school of library and information science should have, at the very least, a lecture hall named after Henriette Avram for having shaped our bibliographic world, MARC is harshly criticized. Let’s examine the reasons for this disaffection.</p>
+
+      <p>In the rest of this post I will mostly take examples from UNIMARC, the flavor of MARC created and maintained by the International Federation of Library Associations and Institutions (IFLA) <a id="footnote-6-ref" href="#footnote-6"><abbr title="Footnote 6">[6]</abbr></a>, because this is the version I am the most familiar with, and because of its interesting developments in recent days <a id="footnote-7-ref" href="#footnote-7"><abbr title="Footnote 7">[7]</abbr></a>.</p>
+
+      <h2>Tennant's arguments</h2>
+
+      <h3>Obsolescence</h3>
+
+      <p>MARC is old. Right. Then what ? At the time of its creation, computer resources were rare and, consequently, expansive. Far from being a flaw, that has shaped MARC in a very compact and efficient format, while perfectly serving its needs. In contrast, XML, the Tennant’s best replacement candidate — which is also getting old — has been recognized verbose, redundant, heavy, and, ironically, to be replaced <a id="footnote-8-ref" href="#footnote-8"><abbr title="Footnote 8">[8]</abbr></a>. Nowadays, as Tennant states, memory is cheap, storage is cheap, processing is cheap. Is it a good reason to overuse these resources? Of course not. That would not be very sustainable-development-friendly. In any case, the supposed obsolescence of MARC cannot be an argument in itself.</p>
+
+      <p>Moreover, an old and proven technology appears more reliable than a fancy but uncertain one, especially when it already achieves its goals. Migration just for the sake of migration looks utterly useless and aimlessly expansive. Shiny lights of innovation are not always of good advice. If it ain’t broke, don’t fix it.</p>
+
+      <h3>Obfuscation</h3>
+
+      <p>According to Tennant, MARC records are unreadable and “people who believe themselves able to read a MARC record without referring to a stack of manuals is a handful of top catalogers and those on serious drugs." <a id="footnote-9-ref" href="#footnote-9"><abbr title="Footnote 9">[9]</abbr></a> MARC requires an extensive documentation to define the semantics of the different tags <a id="footnote-10-ref" href="#footnote-10"><abbr title="Footnote 10">[10]</abbr></a>. It is true. As it is for any encoding format. Tags result from choices, practices and rules that must be explained somewhere.</p>
+
+      <p>For example, here is a sample of an EAD record, which should be usable without any manual since it is expressed in XML <a id="footnote-11-ref" href="#footnote-11"><abbr title="Footnote 10">[11]</abbr></a>:</p>
+
+      <pre>
+
+  &lt;frontmatter&gt;
+    &lt;titlepage&gt;
+      &lt;titleproper&gt;Guide to the Mildred
+        Davenport Dance Programs and Dance School
+        Materials&lt;/titleproper&gt;
+      &lt;num&gt;Collection number: MS-P29&lt;/num&gt;
+      &lt;publisher&gt;Special Collections and Archives
+        &lt;lb&gt;The UCI Libraries
+        &lt;lb&gt;&lt;extptr actuate="onload" show="embed" entityref="ucseal"&gt;
+        &lt;lb&gt;University of California
+        &lt;lb&gt;Irvine, California&lt;/publisher&gt;
+  &lt;list type="deflist"&gt;
+      &lt;defitem&gt;
+          &lt;label&gt;Processed by: &lt;/label&gt;
+          &lt;item&gt;Adrian Turner&lt;/item&gt;
+      &lt;/defitem&gt;
+     . . .
+  &lt;/frontmatter&gt;
+      </pre>
+
+      <p>Is this record really self-explanatory just because the tags labels are more or less derived from english words ? Of course not. What does <code>defitem</code> mean ? How should I use the <code>extptr</code> tag ? You can certainly read the labels — do you ? — but you won’t understand them more than a MARC <code>200 $a</code> without good documentation. I won’t comment this point any further as it is obvious how the obfuscation argument misses the point, which is that these are <b>machine readable</b> formats.</p>
+
+      <h3>Granularity</h3>
+
+      <p>Tennant then mentions the granularity of the format, complaining of the redundancy of information and poor sequencing. He takes the example of an editor, which in MARC is encoded twice in the record (<code>200</code> and <code>70X</code> in UNIMARC) with a strange appearance in the title field. That is true but, again, has nothing to do with MARC: the underlying cataloging code is at fault here.</p>
+
+      <p>Regarding granularity, remember that the MARC format can use 1000 fields, each of them divisible in at least 52 subfields if we make use of lowercase and uppercase letters to label them. I am pretty confident that you may be able to define any level of granularity you need before running out of subfields.</p>
+
+      <p>The format encodes what we decide, no more and no less. For example, in the UNIMARC/B format, the weird <code>200$b</code> subfield, which encoded the resource type was happily and painlessly replaced by the <code>181</code>-<code>182</code>-<code>183</code> trio. Which leads to the next argument…</p>
+
+      <h3>Extensibility</h3>
+
+      <p>Unlike what Tennant asserts, MARC is highly extensible, by design. Look at the work of the PUC <a id="footnote-12-ref" href="#footnote-12"><abbr title="Footnote 12">[12]</abbr></a>: every year, change proposals are discussed, fields are extended, and subfields are created. MARC is a living instrument, with dynamic and regular updates contrived to meet any bibliographic description need.</p>
+
+      <p>You don’t know where you could insert a table of contents in the record, because of the supposed flat nature of MARC ? No problem, see the French <code>B359</code>  <a id="footnote-13-ref" href="#footnote-13"><abbr title="Footnote 13">[13]</abbr></a> for a full hierarchical structure dedicated to the table of contents encoding. You are very welcome.</p>
+
+      <p>The national library of France, which use its own flavor of MARC, INTERMARC, derived from MARC21, is designing a major evolution of the format, named INTERMARC-NG <a id="footnote-14-ref" href="#footnote-14"><abbr title="Footnote 14">[14]</abbr></a> (for New Generation) which will be able to express all the new needs implied by the entity model LRM <a id="footnote-15-ref" href="#footnote-15"><abbr title="Footnote 15">[15]</abbr></a> while still conforming to the syntax normalized by our good old ISO 2709 standard. And it works. INTERMARC-NG is going to become one of the pillars of the French Bibliographic Transition at the BnF.</p>
+
+      <p>These examples should convince you that the MARC format was not only designed as extensible, but also that it actually is.</p>
+
+      <h3>Technical marginalization</h3>
+
+      <p>Tennant points out that MARC is only used by the library community, which seemingly leads to isolation. About this question of marginalization, an XML4lib post by McDonough summarizes the situation quite well and should be enough to conclude the debate: the MARC standard "exists only to enable bibliographic systems to exchange data. Interoperability between systems is already accomplished, and 'XML-izing' MARC won't do anything to make that particular application work any better." <a id="footnote-16-ref" href="#footnote-16"><abbr title="Footnote 16">[16]</abbr></a></p>
+
+      <p>For more than ten years, french bibliographic data from the BnF <a id="footnote-17-ref" href="#footnote-17"><abbr title="Footnote 17">[17]</abbr></a> and from ABES <a id="footnote-18-ref" href="#footnote-18"><abbr title="Footnote 18">[18]</abbr></a> are exposed in XML-RDF, or MARCXML. All these formats, including MARC, complete each other, each one having its own purpose, and supporting different services. Our library information systems talk to each other in MARC and that is fine. The tools to manipulate MARC formats are widespread into our library softwares. Moreover, conversion tools are available to transform any data expressed in MARC to whatever format you can think of <a id="footnote-19-ref" href="#footnote-19"><abbr title="Footnote 19">[19]</abbr></a>. If not, you can always build them or ask a skilled colleague to do it.</p>
+
+      <h3>Library recession</h3>
+
+      <p>Finally, we reach the end of Tennant’s article with a good point. The libraries, stuck with a dying data encoding format and falling behind technological advances, could not be able to fullfil their main role. It is indeed maybe the only good question, as it points out the real goal of all our efforts in bibliographic data structuring: services to the final users. The IFLA LRM conceptual model identifies five user tasks: find, identify, select, obtain and explore <a id="footnote-20-ref" href="#footnote-20"><abbr title="Footnote 20">[20]</abbr></a>. Some models can provide additional services to specific needs, for example in the context of scientific research. But in any case, we must keep that goal in mind when designing data models.</p>
+
+      <p>But again, Tennant runs into the same pitfall . These services are not determined by the encoding format — how would it ? — but by the abstract data model. Which pieces of data to extract from the resource and how related they are, are the fundamental questions to support user needs. And they can never be answered by a computer format, but by a data model. And guess what ? All existing bibliographic data models, even the more advanced and bleeding-edge ones, are expressible in MARC, as we have seen before.</p>
+
+      <h2>What calaloging is all about</h2>
+
+      <p>Let me be clear on that point: with this defense of the MARC formats, I am not trying to artificially protect an expertise which although certainly difficult to acquire, cannot be seen as the core of the calaloging activity. Actually, you don’t need MARC to catalog, nor XML, nor any other format.</p>
+
+      <p>Cataloging is the activity of describing bibliographic entities. Not to know by heart every sublabel of a computer format. As a cataloger, learning MARC is a pure waste of time. It is even worse, thinking in terms of MARC — or any XML based format — could distract you from your main objective. What you need to know, and know well, to do a good work is your cataloging code, and, if possible, its underlying data model. Be familiar with ISBD, AACR, RDA or whatever code your organization depends on. Forget about the details of encoding formats.</p>
+
+      <p>MARC as a data production format is a historical accident. At those early times of automation, human-machine interfaces were still in their infancy. There were no forms, no graphical windows. The original mistake has been to get stuck in MARC production mode even after graphical interfaces had made considerable progress. MARC should not be a  production format. It is not meant to be written by hand, nor to be read by humans. As its name implies, it is a machine thing.</p>
+
+      <p>Catalogers should not be aware of the underlying format. Let’s say you play online chess : do you really want to learn the PGN format specification <a id="footnote-21-ref" href="#footnote-21"><abbr title="Footnote 21">[21]</abbr></a> in order to be able to play a move ? Of course not, you just want to click on a piece, move it on the screen and checkmate your opponent’s king. This is your only job, because while you play you are a chess player, not a computer engineer.</p>
+
+      <p>That initial confusion, inherited from history, should definitely be buried.</p>
+
+      <h2>Conclusion</h2>
+
+      <p>Roy Tennant’s article rests upon a misconception of what is MARC. The format itself, and its children, cannot be held responsible for the terrible flaws Tennant points out. Data encoding formats are only conventions and are what we do with them. An XML based format would not do better under the same circumstances. MARC is a compact, easy to understand, expressive and highly extensible format, as recent developments prove. It serves well its objective: sharing bibliographic data. However, any other usage of MARC is a mistake.</p>
+
+      <p>MARC is not an end in itself and eventually it may die. Because it could become overloaded and bloated. If that happens we will use something else. For technical reasons, not because one format or another is “modern” or trendy. Encoding bibliographic data is not a beauty contest. As long as a format can express our data model, it lives. So nothing must die today, except maybe <i>Marc must die</i>.</p>
+
+      <h2>Notes</h2>
+
+      <p id="footnote-1">1. Tennant, Roy. <i>MARC Must Die.</i> Library Journal, Oct. 2002. <a href="#footnote-1-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-2">2. Tennant, Roy. “‘MARC Must Die’ 15 Years On.” <i>Hanging Together</i>, 15 Oct. 2017, <a href="https://hangingtogether.org/marc-must-die-15-years-on/">https://hangingtogether.org/marc-must-die-15-years-on/</a><a href="#footnote-2-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-3">3. Ayre, Lori. “MARC Isn’t Dying Fast Enough.” <i>Collaborative Librarianship</i>, vol. 6, no. 4, Jan. 2014, <a href="https://digitalcommons.du.edu/collaborativelibrarianship/vol6/iss4/3">https://digitalcommons.du.edu/collaborativelibrarianship/vol6/iss4/3</a><a href="#footnote-3-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-4">4. Avram, Henriette D. “Machine-Readable Cataloging (MARC) Program.” <i>Encyclopedia of Library and Information Science</i>, vol. 3, Marcel Dekker, 2003 (1975), pp. 1712–30.<a href="#footnote-4-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-5">5. Tennant, Roy. “MARC Must Die.” <i>Library Journal</i>, Oct. 2002<a href="#footnote-5-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-6">6. <a href="https://www.ifla.org/publications/unimarc-formats-and-related-documentation/">https://www.ifla.org/publications/unimarc-formats-and-related-documentation/</a><a href="#footnote-6-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-7">7. <a href="https://www.ifla.org/g/unimarc-rg/permanent-unimarc-committee-puc/">https://www.ifla.org/g/unimarc-rg/permanent-unimarc-committee-puc/</a> ; see also <a href="https://www.transition-bibliographique.fr/unimarc/comite-francais-unimarc/">https://www.transition-bibliographique.fr/unimarc/comite-francais-unimarc/</a><a href="#footnote-7-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-8">8. <a href="https://everypageispageone.com/2016/01/28/why-does-xml-suck/">https://everypageispageone.com/2016/01/28/why-does-xml-suck/</a><a href=""></a><a href="#footnote-8-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-9">9. Tennant, Roy. “MARC Must Die.” <i>Library Journal</i>, Oct. 2002<a href="#footnote-9-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-10">10. See also Zuber, Peter A. “MARC vs XML.” <i>Faculty Publications</i>, no. 998, Dec. 2005, <a href="https://scholarsarchive.byu.edu/facpub/998">https://scholarsarchive.byu.edu/facpub/998</a><a href="#footnote-10-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-11">11. <a href="https://www.loc.gov/ead/tglib/appendix_c.html">https://www.loc.gov/ead/tglib/appendix_c.html</a><a href="#footnote-11-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-12">12. <a href="https://www.ifla.org/g/unimarc-rg/permanent-unimarc-committee-puc/">https://www.ifla.org/g/unimarc-rg/permanent-unimarc-committee-puc/</a><a href="#footnote-12-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-13">13. <a href="https://www.transition-bibliographique.fr/wp-content/uploads/2019/02/B359-2002.pdf">https://www.transition-bibliographique.fr/wp-content/uploads/2019/02/B359-2002.pdf</a><a href="#footnote-13-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-14">14. <a href="https://multimedia-ext.bnf.fr/pdf/jsyd2017_peyrard.pdf"</a>https://multimedia-ext.bnf.fr/pdf/jsyd2017_peyrard.pdf<a href="#footnote-14-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-15">15. <a href="https://repository.ifla.org/bitstream/123456789/1703/1/IFLA-LRM-traduction-francaise.pdf">https://repository.ifla.org/bitstream/123456789/1703/1/IFLA-LRM-traduction-francaise.pdf</a><a href="#footnote-15-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-16">16.Zuber, Peter A. “MARC vs XML.” <i>Faculty Publications</i>, no. 998, Dec. 2005, <a href="https://scholarsarchive.byu.edu/facpub/998">https://scholarsarchive.byu.edu/facpub/998</a> <a href="#footnote-16-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-17">17. <a href="https://data.bnf.fr/">https://data.bnf.fr/</a><a href="#footnote-17-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-18">18. <a href="https://documentation.abes.fr/sudoc/manuels/administration/sudoc_rdf/index.html">https://documentation.abes.fr/sudoc/manuels/administration/sudoc_rdf/index.html</a><a href="#footnote-18-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-19">19. A random example: <a href="https://github.com/lcnetdev/marc2bibframe2">https://github.com/lcnetdev/marc2bibframe2</a><a href="#footnote-19-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-20">20. <a href="https://repository.ifla.org/bitstream/123456789/40/1/ifla-lrm-august-2017_rev201712.pdf">https://repository.ifla.org/bitstream/123456789/40/1/ifla-lrm-august-2017_rev201712.pdf</a><a href="#footnote-20-ref" title="return to text">&#8617;</a></p>
+      <p id="footnote-21">21. <a href="https://www.chessclub.com/help/PGN-spec">https://www.chessclub.com/help/PGN-spec</a><a href="#footnote-20-ref" title="return to text">&#8617;</a></p>
+
+    </div>
+
+    <footer>
+      <a href="https://twitter.com/_frp"><img src="../assets/twitter.png" /></a>
+      <a href="https://github.com/frp-2718"><img src="../assets/github.png" /></a>
+      <a href="../feed/feed.xml"><img src="../assets/rss.png" /></a>
+    </footer>
+
+  </body>
+</html>
